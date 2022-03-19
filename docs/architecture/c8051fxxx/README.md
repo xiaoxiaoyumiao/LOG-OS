@@ -12,7 +12,7 @@
   * 设计为取反或许是因为 flash erase 时置 1 的特性
   * \(F340 specific\) The page containing the Lock Byte is 0xFA00~0xFBFF\(that is, the last page of user space\).
 
-![](../../.gitbook/assets/image-20210131113200394.png)
+![](../../attachments/assets/image-20210131113200394.png)
 
 ## 外部晶振配置
 
@@ -20,7 +20,7 @@
 * 引脚分布：外接晶振的时候XTAL1和XTAL2分别为P0.6和P0.7\(340/1/4/5/8\)或P0.2和P0.3\(342/3/6/7/9/A/B\)，IO模式应当配置为模拟输入\(analog input\)，需要在交叉开关中配置SKIP跳过相应引脚
 * XFCN配置：根据晶振频率设置OSCXCN\(EXternal OSCillator CoNtrol\)寄存器的XFCN位\(\[2:0\]\)，表格如下：
 
-![](../../.gitbook/assets/02.png)
+![](../../attachments/assets/02.png)
 
 * XOSCMD配置：根据外接晶振模式配置OSCXCN寄存器的XOSCMD位\(\[6:4\]\)，配置如下：
   * 00x: External Oscillator circuit off. 
