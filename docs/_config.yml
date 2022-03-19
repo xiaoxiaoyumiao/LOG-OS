@@ -34,11 +34,6 @@ theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   
-defaults:
-  - scope:
-      path: ".gitbook/assets"
-    values:
-      image: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

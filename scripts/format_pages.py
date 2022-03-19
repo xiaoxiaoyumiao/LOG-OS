@@ -50,6 +50,7 @@ for root, dirs, files in os.walk(os.path.join(REPO_ROOT, SOURCE_PATH)):
             content = re.sub(embed_end_pat, "", content)
             
             content = re.sub("\.gitbook/assets", "attachments/assets", content)
+            content = re.sub("attachments/assets", "{{ site.baseurl }}/attachments/assets", content)
             
             fw = open(os.path.join(root, filename), encoding="utf-8", mode="w")
             fw.write(content)
