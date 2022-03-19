@@ -24,11 +24,11 @@ axes.set_ylabel('some numbers')
 plt.savefig('foo.png') # save instead of showing
 ```
 
-![naive case](<../../attachments/assets/image (3).png>)
+![naive case](<../../{{ site.baseurl }}/attachments/assets/image (3).png>)
 
 以下是  Matplotlib 中使用的主要术语。
 
-![](<../../attachments/assets/image (2).png>)
+![](<../../{{ site.baseurl }}/attachments/assets/image (2).png>)
 
 
 
@@ -44,7 +44,7 @@ plt.legend() # add a legend
 plt.show()
 ```
 
-![](../../attachments/assets/image.png)
+![](../../{{ site.baseurl }}/attachments/assets/image.png)
 
 ### More Data in Figure
 
@@ -66,7 +66,7 @@ for i, axs_row in enumerate(axs):
 plt.show()
 ```
 
-![subplots](<../../attachments/assets/image (4).png>)
+![subplots](<../../{{ site.baseurl }}/attachments/assets/image (4).png>)
 
 ## More Types of Plots
 
@@ -100,7 +100,7 @@ plt.bar(x, y)
 plt.show()
 ```
 
-![](<../../attachments/assets/image (5) (1).png>)\`\`\`
+![](<../../{{ site.baseurl }}/attachments/assets/image (5) (1).png>)\`\`\`
 
 ## Styling
 
@@ -127,7 +127,7 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0.)
 plt.show()
 ```
 
-![](<../../attachments/assets/image (1).png>)
+![](<../../{{ site.baseurl }}/attachments/assets/image (1).png>)
 
 通过 `rcParams` 可以定制全局字体：
 

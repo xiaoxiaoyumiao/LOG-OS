@@ -30,6 +30,7 @@ print(test_res)
 
 test_str = "/.gitbook/assets/16.png"
 test_str = re.sub("\.gitbook/assets", "attachments/assets", test_str)
+test_str = re.sub("attachments/assets", "{{ site.baseurl }}/attachments/assets", test_str)
 print(test_str)
 
 for root, dirs, files in os.walk(os.path.join(REPO_ROOT, SOURCE_PATH)):

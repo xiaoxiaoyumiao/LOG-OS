@@ -25,5 +25,5 @@ Terminology:
 
 又：某些图片显示因网络原因可能出现问题。必要时请选择合适的代理工具。
 
-![](attachments/assets/16.png)
+![]({{ site.baseurl }}/attachments/assets/16.png)
 
