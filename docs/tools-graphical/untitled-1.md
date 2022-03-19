@@ -1,6 +1,6 @@
 # X11
 
-{% embed url="https://askubuntu.com/questions/213678/how-to-install-x11-xorg" caption="" %}
+[https://askubuntu.com/questions/213678/how-to-install-x11-xorg](https://askubuntu.com/questions/213678/how-to-install-x11-xorg)
 
-{% embed url="https://developer.ibm.com/technologies/linux/tutorials/l-lpic1-106-1/" caption="" %}
+[https://developer.ibm.com/technologies/linux/tutorials/l-lpic1-106-1/](https://developer.ibm.com/technologies/linux/tutorials/l-lpic1-106-1/)
 

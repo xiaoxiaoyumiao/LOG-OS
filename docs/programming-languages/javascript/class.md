@@ -23,7 +23,7 @@ let myCar1 = new Car("Ford", 2014);
 
 ## Static
 
-{% embed url="https://javascript.info/static-properties-methods" caption="" %}
+[https://javascript.info/static-properties-methods](https://javascript.info/static-properties-methods)
 
 ## Reference
 

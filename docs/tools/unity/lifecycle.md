@@ -4,7 +4,7 @@
 
 组件左上角的 checkbox 是 enable / disable 的选项。
 
-{% embed url="https://answers.unity.com/questions/26844/enabledisable-specific-components.html" caption="" %}
+[https://answers.unity.com/questions/26844/enabledisable-specific-components.html](https://answers.unity.com/questions/26844/enabledisable-specific-components.html)
 
 ## Reference
 

@@ -2,7 +2,7 @@
 
 ## 自定义Inspector
 
-{% embed url="https://blog.csdn.net/qq_33337811/article/details/62042218" %}
+[https://blog.csdn.net/qq_33337811/article/details/62042218](https://blog.csdn.net/qq_33337811/article/details/62042218)
 
 ## 在Inspector中添加按钮
 

@@ -21,7 +21,7 @@
 
 ## Installation Reference
 
-{% embed url="https://docs.microsoft.com/en-us/azure/kinect-dk/" %}
+[https://docs.microsoft.com/en-us/azure/kinect-dk/](https://docs.microsoft.com/en-us/azure/kinect-dk/)
 
 ## API Reference
 

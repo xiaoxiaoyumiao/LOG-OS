@@ -25,5 +25,10 @@ Terminology:
 
 又：某些图片显示因网络原因可能出现问题。必要时请选择合适的代理工具。
 
-![](.gitbook/assets/16.png)
+![]({{ site.baseurl }}/.gitbook/assets/16.png)
+
+{% assign image_files = site.static_files | where: "image", true %}
+{% for myimage in image_files %}
+  {{ myimage.path }}
+{% endfor %}
 

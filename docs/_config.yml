@@ -33,6 +33,12 @@ github_username:  jekyll
 theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
+  
+defaults:
+  - scope:
+      path: ".gitbook/assets"
+    values:
+      image: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

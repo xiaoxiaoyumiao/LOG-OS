@@ -1,6 +1,7 @@
 # WXML
 
 ```markup
+{% raw  %}
 <!--control flow-->
 <!--This can be used on any type of element-->
 <view wx:if="{{boolean==true}}">
@@ -12,6 +13,7 @@
 <view wx:else>
     <view class="bg_red"></view>
 </view>
+{% endraw %}
 ```
 
 ## Reference
