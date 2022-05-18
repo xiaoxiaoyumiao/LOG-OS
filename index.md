@@ -1,4 +1,0 @@
-# HOME
-
-Everything starts here.
-
