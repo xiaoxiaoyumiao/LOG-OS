@@ -1,0 +1,20 @@
+site_name: LOG-OS
+site_url: http://deemolover.github.io/
+plugins:
+  - search
+  - literate-nav:
+      nav_file: SUMMARY.md
+theme:
+  name: material
+  palette:
+    primary: light green
+    accent: deep purple
+    logo: attachments/assets/logo.png
+    favicon: attachments/assets/logo.png
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.magiclink
+  - pymdownx.superfences
+
+        
+
