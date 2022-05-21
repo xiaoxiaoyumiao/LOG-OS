@@ -1,0 +1,5 @@
+* [Chapter 2 RE, Text Norm, Edit dist.](README.md)
+* [2.2 Words](2.2-words.md)
+* [2.3 Corpora](2.3-corpora.md)
+* [2.4 Text Normalization](2.4-text-normalization.md)
+* [2.5 Minimum Edit Distance](2.5-minimum-edit-distance.md)

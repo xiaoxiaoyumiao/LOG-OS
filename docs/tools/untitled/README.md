@@ -1,4 +1,0 @@
-# adb
-
-Android debugging tool.
-

@@ -1,0 +1,7 @@
+* [Language Processing](README.md)
+* [chapter-2-re-text-norm-edit-dist](chapter-2-re-text-norm-edit-dist/)
+* [chapter-3-n-gram-language-models](chapter-3-n-gram-language-models/)
+* [chapter-4-naive-bayes-and-sentiment-classification](chapter-4-naive-bayes-and-sentiment-classification/)
+* [chapter-5-logistic-regression](chapter-5-logistic-regression/)
+* [chapter-6-vector-semantics-and-embeddings](chapter-6-vector-semantics-and-embeddings/)
+* [Miscellaneous](miscellaneous.md)

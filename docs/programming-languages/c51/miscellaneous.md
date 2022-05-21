@@ -2,7 +2,7 @@
 
 特殊关键字：
 
-```text
+```c
 // bit 声明一个位标量，值是一个二进制位，取0或1，不能创建位的指针或数组
 bit flag = 0; 
 // sbit 定义可位寻址对象，一般用来给引脚起个别名
@@ -34,5 +34,5 @@ RLC A ;rotate left 1 bit
 DJNZ Rn, LABEL ; Rn--; if (Rn!=0) jump to LABEL
 ```
 
-\`\`
+
 

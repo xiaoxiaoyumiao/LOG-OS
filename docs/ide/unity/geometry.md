@@ -1,6 +1,6 @@
 # Geometry
 
-## **Sprite**
+## Sprite
 
 脚本中修改sprite的图片来源，只需获取SpriteRenderer组件，修改其sprite域即可。
 
@@ -12,7 +12,7 @@ sprite 资源的 pivot 可以自定义，通过这样来调整图片资源中心
 float width = object.GetComponent<Renderer>().bounds.size.x;
 ```
 
-## **直线绘制**
+## 直线绘制
 
 至少有 GL 和 `LineRenderer` 两种搞法。
 
@@ -48,7 +48,7 @@ public void PaintLine(Vector3 start, Vector3 end)
     }
 ```
 
-## **几何变换**
+## 几何变换
 
 ```csharp
 gameObject.transform.position = new Vector...
@@ -74,13 +74,13 @@ gameObject.transform.position = new Vector...
 >
 > 这样子物体B的localscale会变成（2,2,2） ， 这样子就没有改变他的absscale。
 
-## **Ray**
+## Ray
 
 使用Raycast可以方便地绘制射线、完成线和碰撞体的碰撞检测。
 
 [https://blog.csdn.net/u010718707/article/details/42111567](https://blog.csdn.net/u010718707/article/details/42111567)
 
-## **NavMesh 寻路**
+## NavMesh 寻路
 
 ```csharp
 UnityEngine.AI.NavMeshAgent
@@ -93,7 +93,7 @@ agent.SetDestination(point); // 用于设定本游戏对象的寻路目标
 agent.remainingDistance; // 用于获取剩余距离
 ```
 
-## **TileMap**
+## TileMap
 
 [https://blog.csdn.net/seemeno/article/details/93136806](https://blog.csdn.net/seemeno/article/details/93136806)
 
@@ -117,7 +117,7 @@ tile.sprite = tmp;
 
 当 tilemap 显示粉红色的时候，检查一下 tilemap 组件的材质属性。
 
-## **血条 & 进度条实现**
+## 血条 & 进度条实现
 
 有 FillAmount 和 localScale 两种手段，前者支持的效果更丰富，但会导致反复重绘；后者在实现简单长条进度时性能更优。
 
@@ -136,7 +136,7 @@ tile.sprite = tmp;
 
 把长条的 anchor 移动到它的一个短边，这样修改 localScale 就可以让长条呈现以这一短边为起点伸缩填充的效果。
 
-## **对象的布局 Layout**
+## 对象的布局 Layout
 
 Inspector的rect transform可以看到有个方形图案指示的锚点位置设置，默认是锚点居中的，如果想填充父对象，可以选择在两个方向上stretch（最右下角的），并在右边的参数中把left right top bottom都改成0（这里和CSS很像）。
 

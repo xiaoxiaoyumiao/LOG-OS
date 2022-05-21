@@ -1,0 +1,122 @@
+{
+  "main": {
+    "id": "2147fd0cb4a7efa5",
+    "type": "split",
+    "children": [
+      {
+        "id": "0066bf35739aefc8",
+        "type": "split",
+        "children": [
+          {
+            "id": "b1c7c3d1c2a90117",
+            "type": "leaf",
+            "dimension": 49.287749287749286,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tools/SUMMARY.md",
+                "mode": "source"
+              }
+            }
+          },
+          {
+            "id": "495320c259efb04e",
+            "type": "leaf",
+            "dimension": 50.712250712250714,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SUMMARY.md",
+                "mode": "source"
+              }
+            }
+          }
+        ],
+        "direction": "vertical"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1496a80567165524",
+    "type": "split",
+    "children": [
+      {
+        "id": "3ffa123b17d56794",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "53bf9728ad240a70",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "65a52c13e891554b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "untitled",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 363
+  },
+  "right": {
+    "id": "b78758878785182f",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b4dce9e7c237f3c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b05c8d1103fae35c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "SUMMARY.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "495320c259efb04e",
+  "lastOpenFiles": [
+    "SUMMARY.md",
+    "tools/SUMMARY.md",
+    "tools-numerical/matlab/SUMMARY.md",
+    "tools-virtualized/ros-kinetic/SUMMARY.md",
+    "tools-virtualized/ros-kinetic/README.md",
+    "tools-virtualized/SUMMARY.md",
+    "tools-numerical/SUMMARY.md",
+    "programming-languages/SUMMARY.md",
+    "tools-networking/SUMMARY.md",
+    "tools-graphical/SUMMARY.md"
+  ]
+}

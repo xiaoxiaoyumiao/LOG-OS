@@ -4,6 +4,18 @@
 
 可以通过 gameObject - UI 对游戏对象添加UI组件，添加以后会自动在该对象下建立一个canvas类型的子对象，然后在这个canvas对象下建一个UI对象。canvas子对象可以有多个。
 
+## 不同的Canvas模式
+
+这里要记录一下Canvas的三种渲染方式：
+
+1. Screen Space - Overlay
+   1. 这种渲染模式表示 Canvas 下的所有的 UI 控件永远位于屏幕的前面 , 不管有没有相机 , UI元素永远在屏幕最前面 ，主要是2D效果。
+2. Screen Space - Camera
+   1. 这种渲染模式 Canvas 和 摄像机之间有一定的距离 , 可以在摄像机和 Canvas 之间播放一些粒子特效，主要是3D效果。
+3. World Space
+   1. 这种模式下 Canvas 就和普通的 3D 物体一样了 , 可以控制它的大小,旋转,缩放等 , 一般用来做血条。
+   2. 注意！Canvas做Prefab子物体的情况下千万不要动Canvas的位置和大小，否则场景中UI子物体的位置并不会和Prefab编辑时看到的同步；此外如果显示不正常或者直接消失，先注意修改一下Canvas的Pixels per unit，这个太大可能会导致UI物体过于模糊或者溢出屏幕
+
 Image：遮罩可以使用 Mask 组件。具有 Mask 组件的 Image 会成为其子 Image 的遮罩，即只显示子 Image 落在 Mask Image 的非透明区域内的部分。遮罩的策略可以设置，如没有子 Image 的位置是否显示 Mask Image 的内容。
 
 ```csharp
@@ -32,18 +44,6 @@ Toolbar
 版权声明：本文为CSDN博主「电达」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/u011480667/article/details/77542226
 ```
-
-## 不同的Canvas模式
-
-这里要记录一下Canvas的三种渲染方式：
-
-1. Screen Space - Overlay
-   1. 这种渲染模式表示 Canvas 下的所有的 UI 控件永远位于屏幕的前面 , 不管有没有相机 , UI元素永远在屏幕最前面 ，主要是2D效果。
-2. Screen Space - Camera
-   1. 这种渲染模式 Canvas 和 摄像机之间有一定的距离 , 可以在摄像机和 Canvas 之间播放一些粒子特效，主要是3D效果。
-3. World Space
-   1. 这种模式下 Canvas 就和普通的 3D 物体一样了 , 可以控制它的大小,旋转,缩放等 , 一般用来做血条。
-   2. 注意！Canvas做Prefab子物体的情况下千万不要动Canvas的位置和大小，否则场景中UI子物体的位置并不会和Prefab编辑时看到的同步；此外如果显示不正常或者直接消失，先注意修改一下Canvas的Pixels per unit，这个太大可能会导致UI物体过于模糊或者溢出屏幕
 
 ## 对话框实现
 

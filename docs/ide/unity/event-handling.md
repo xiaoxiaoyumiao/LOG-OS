@@ -1,6 +1,6 @@
 # Event Handling
 
-## 鼠标事件的响应处理
+## Mouse Events
 
 最直接的轮询方法：
 
@@ -45,6 +45,37 @@ public class StartGame : MonoBehaviour
 
 [https://docs.unity3d.com/Manual/ExecutionOrder.html](https://docs.unity3d.com/Manual/ExecutionOrder.html)
 
+## Keyboard Events
+
+```csharp
+// key pressed down
+if (Input.GetKey(KeyCode.W))
+{
+    // ...
+}
+
+// any key down
+if (Input.anyKey){
+    // ...
+}
+
+```
+
+关于同时使用WASD和arrow控制的方案：
+
+Edit -> roject Settings -> Input，Horizontal 和 Vertical 规定一套按键输入属性
+
+ref: [https://www.jianshu.com/p/962e91c6e56c](https://www.jianshu.com/p/962e91c6e56c)
+
+代码里用
+
+```csharp
+horizontal_axis_name = Horizontal;
+h = Input.GetAxisRaw(horizontal_axis_name);
+```
+
+## UI Events
+
 UI 的鼠标判断则需要借助事件系统：
 
 ```csharp
@@ -74,34 +105,23 @@ public class ZhiShiKuUIChange : MonoBehaviour, IPointerEnterHandler, IPointerExi
 }
 ```
 
-**键盘输入事件**
+Button 组件的 onClick: 在该组件上按下鼠标后，仍在该组件上松开鼠标时触发。(ref: \[1])
 
-```csharp
-// key pressed down
-if (Input.GetKey(KeyCode.W))
-{
-    // ...
-}
 
-// any key down
-if (Input.anyKey){
-    // ...
-}
+## Input Action
+
+Abstraction over a source of input.
 
 ```
-
-关于同时使用WASD和arrow控制的方案：
-
-**Edit-&gt;Project Settings-&gt;Input**，Horizontal和Vertical规定一套案件输入属性
-
-[https://www.jianshu.com/p/962e91c6e56c](https://www.jianshu.com/p/962e91c6e56c)
-
-代码里用
-
-```csharp
-horizontal_axis_name = Horizontal;
-h = Input.GetAxisRaw(horizontal_axis_name);
+    var action = new InputAction(binding: "<Gamepad>/buttonSouth");
+    
+    // Additional bindings can be added using `AddBinding`.
+    action.AddBinding("<Mouse>/leftButton");
 ```
 
+ref: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/api/UnityEngine.InputSystem.InputAction.html
 
+## References
+
+\[1] [https://docs.unity3d.com/530/Documentation/ScriptReference/UI.Button-onClick.html](https://docs.unity3d.com/530/Documentation/ScriptReference/UI.Button-onClick.html)
 

@@ -8,6 +8,23 @@ Unity 会在 C# 项目中定义一些 #define 预处理指令，这些指令定�
 
 通过在项目的 Assets 文件夹中添加 csc.rsp 文件，可以设置自定义的预处理指令，以及引用一些第三方库。(ref: \[4])
 
+## Build on Linux
+
+  - Editor version 2020.3 only supports > Ubuntu 18.04
+  - ref: 
+    - https://docs.unity3d.com/2020.1/Documentation/Manual/GettingStartedInstallingHub.html
+    - https://issuetracker.unity3d.com/issues/linux-linux-editor-crashes-when-right-clicking-in-scene-view
+
+## Use in Docker
+
+ref:
+    - [https://johnaustin.io/articles/2020/running-unity-20201-in-docker](https://johnaustin.io/articles/2020/running-unity-20201-in-docker)
+    - [https://game.ci/](https://game.ci/)
+    - [https://forum.unity.com/threads/unity-is-simply-impossible-to-use-on-ubuntu.994819/](https://forum.unity.com/threads/unity-is-simply-impossible-to-use-on-ubuntu.994819/)
+    - [https://mathiashueber.com/windows-virtual-machine-gpu-passthrough-ubuntu/](https://mathiashueber.com/windows-virtual-machine-gpu-passthrough-ubuntu/)
+    - [https://forum.unity.com/threads/running-unity-in-virtualbox.549637/](https://forum.unity.com/threads/running-unity-in-virtualbox.549637/)
+    - [https://forum.unity.com/threads/unity-on-linux-release-notes-and-known-issues.350256/page-2](https://forum.unity.com/threads/unity-on-linux-release-notes-and-known-issues.350256/page-2)
+
 ## References
 
 \[1] Unity platform dependent compilation & preprocessors: [https://docs.unity3d.com/Manual/PlatformDependentCompilation.html](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html)

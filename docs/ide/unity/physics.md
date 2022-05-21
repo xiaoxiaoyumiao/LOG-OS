@@ -1,10 +1,30 @@
 # Physics
 
-## 帧与时间
+## Time & Update
 
 Time.deltaTime获取上一帧历时秒数，应当在Update中调用。在 FixedUpdate 中调用时，它总是返回一个（和fixed 帧率相关的）常量，这方便进行一些物理计算（事实上 FixedUpdate 就是在 Update cycle 的物理计算子循环中）。但是 FixedUpdate 本身并不是严格按一定时间间隔执行，而是通过反复执行（或不执行）子循环来维持帧率恒定。
 
-## 时间尺度TimeScale
+### Lerp & deltaTime
+
+```c#
+    IEnumerator AnimateMove(Vector3 origin, Vector3 target, float duration)
+    {
+      float journey = 0f;
+      while (journey <= duration)
+      {
+        journey = journey + Time.deltaTime;
+        float percent = Mathf.Clamp01(journey / duration);
+        
+        transform.position = Vector3.Lerp(origin, target, percent);
+        
+        yield return null;
+      }
+```
+
+ref: https://medium.com/@rhysp/lerping-with-coroutines-and-animation-curves-4185b30f6002
+
+
+### 时间尺度 TimeScale
 
 `Time.TimeScale`可以用来设置时间流逝的快慢。对于有物理运算的场合，可能会导致物理模拟的不连续。
 
@@ -16,9 +36,9 @@ UNITY的碰撞检测实际分为碰撞检测和触发检测两种。触发检测
 
 ref: [https://docs.unity3d.com/ScriptReference/Collider.OnCollisionEnter.html](https://docs.unity3d.com/ScriptReference/Collider.OnCollisionEnter.html)
 
-### **Ray**
+### Ray
 
-使用Raycast可以方便地绘制射线、完成线和碰撞体的碰撞检测。
+使用 Raycast 可以方便地绘制射线、完成线和碰撞体的碰撞检测。
 
 ref: [https://docs.unity3d.com/ScriptReference/Physics.Raycast.html](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html)
 

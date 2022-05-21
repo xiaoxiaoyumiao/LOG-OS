@@ -6,11 +6,11 @@ plugins:
       nav_file: SUMMARY.md
 theme:
   name: material
+  logo: attachments/assets/logo.png
+  favicon: attachments/assets/logo.png
   palette:
     primary: light green
     accent: deep purple
-    logo: attachments/assets/logo.png
-    favicon: attachments/assets/logo.png
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.magiclink
