@@ -472,6 +472,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#x11-forwarding-from-remote-rootless-docker-container" class="md-nav__link">
+    X11-forwarding from remote rootless docker container?
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -7883,6 +7890,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#x11-forwarding-from-remote-rootless-docker-container" class="md-nav__link">
+    X11-forwarding from remote rootless docker container?
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -7920,6 +7934,16 @@ ssh-add &lt;path to the private key file&gt;
 <h2 id="zsh">Zsh</h2>
 <p>Zsh, of course, has different startup files than Bash. Roughly <code>~/.zshrc</code> corresponds to <code>~/.bashrc</code> and <code>~/.zlogin</code> corresponds to <code>~/.login_profile</code>. </p>
 <p>reference: <a href="https://zsh.sourceforge.io/Guide/zshguide02.html">https://zsh.sourceforge.io/Guide/zshguide02.html</a></p>
+<h2 id="x11-forwarding-from-remote-rootless-docker-container">X11-forwarding from remote rootless docker container?</h2>
+<p>I didn't find a secure and rootless way to do this, but some links here might be useful:</p>
+<p>Answers from Rubund: 
+- <a href="https://unix.stackexchange.com/questions/403424/x11-forwarding-from-a-docker-container-in-remote-server">https://unix.stackexchange.com/questions/403424/x11-forwarding-from-a-docker-container-in-remote-server</a>
+- <a href="https://stackoverflow.com/questions/48235040/run-x-application-in-a-docker-container-reliably-on-a-server-connected-via-ssh-w">https://stackoverflow.com/questions/48235040/run-x-application-in-a-docker-container-reliably-on-a-server-connected-via-ssh-w</a></p>
+<p>Some workaround on authentication that looks dangerous:
+<a href="https://stackoverflow.com/questions/44429394/x11-forwarding-of-a-gui-app-running-in-docker">https://stackoverflow.com/questions/44429394/x11-forwarding-of-a-gui-app-running-in-docker</a></p>
+<p><code>--ipc host</code> looks related to x11 forwarding (<a href="https://stackoverflow.com/questions/38907708/docker-ipc-host-and-security">https://stackoverflow.com/questions/38907708/docker-ipc-host-and-security</a>) but it can cause permission issue when it's rootless (<a href="https://github.com/moby/moby/issues/36674">https://github.com/moby/moby/issues/36674</a>). In my case this option leads to something like this:</p>
+<div class="highlight"><pre><span></span><code>docker: Error response from daemon: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error mounting &quot;mqueue&quot; to rootfs at &quot;/dev/mqueue&quot;: mount mqueue:/dev/mqueue ...(omitted)
+</code></pre></div>
 
 
 
