@@ -37,4 +37,5 @@
   * 一般而言可以使用 tail 查看文件结尾的一段内容
   * tail -f（follow）参数可以将一个文件中追加写入的内容实时输出
   * ref：[https://www.cnblogs.com/fps2tao/p/8535519.html](https://www.cnblogs.com/fps2tao/p/8535519.html)
-
+* `cd -` cd to the previous working directory
+* kill - by default it uses `SIGTERM` = 15, but this may get ignored by some process (stuck in IO, for example). In this case try `kill -9` where 9 is `SIGKILL`. ref: https://askubuntu.com/questions/59811/kill-pid-not-really-killing-the-process-why; also check manual of `kill`

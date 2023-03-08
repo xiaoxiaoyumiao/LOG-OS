@@ -6,3 +6,4 @@
 * [HCI Toolbox](hci-toolbox/)
 * [Network](network/)
 * [Robotics](robotics/)
+* [Reinforcement Learning](reinforcement-learning/)

@@ -5,4 +5,7 @@
   * [https://github.com/tensorflow/tensorflow/issues/28660](https://github.com/tensorflow/tensorflow/issues/28660)
 * 使用 requirements.txt 安装：--file
   * [https://stackoverflow.com/questions/51042589/conda-version-pip-install-r-requirements-txt-target-lib/51043636](https://stackoverflow.com/questions/51042589/conda-version-pip-install-r-requirements-txt-target-lib/51043636)
-
+* To disable auto base env activation, run the following command (for once):
+```bash
+conda config --set auto_activate_base false
+```

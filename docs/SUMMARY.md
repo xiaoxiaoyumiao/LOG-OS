@@ -1,7 +1,7 @@
 * [Home](index.md)
 * [Diary](diary/)
 * [Theory](theory/)
-* [Programming Languages](programming-languages/)
+* [Formal Languages](formal-languages/)
 * [Tools - Management](tools/)
 * [Tools - Numerical](tools-numerical/)
 * [Tools - Media](tools-media/)

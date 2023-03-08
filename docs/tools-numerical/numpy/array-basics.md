@@ -156,7 +156,7 @@ np.linalg.inv(a)
 np.sum(a, axis=None, dtype=None, out=None, keepdims=np._NoValue)
 ```
 
-See also [Python - Emulating numeric types](../../programming-languages/python/numerical.md#emulating-numbers).
+See also [Python - Emulating numeric types](../../formal-languages/python/numerical.md#emulating-numbers).
 
 ## Reference
 
